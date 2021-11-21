@@ -14,6 +14,16 @@ Through our intial analysis, we were able to identify top performing schools, by
 
 ![district_summary_df_new results_screenshot](https://github.com/Jflux05/School_District_Analysis/blob/8d5519beae5b34a7f18f52f0e7cc0d0b42a16713/Resources/district_summary_df_new.png)
 
+As you can see from the above screenshots, the recalculations had minimal impact on the district summary results. It is evident that while their impact was minimal, the 9th grade scores that were omitted due to potential academic dishonesty, did skew the results to be marginally higher. 
+
+- Marinal Result Impacts:
+  - The percentage of students passing all subjects fell from 65% to 64.9%
+  - The average student math score dropped from 79.0 to 78.9. While the percentage of students passing math fell from 75% to 74.8%.
+  - The average student reading score remained unchained 81.9, however, the percentage of students passing reading fell from 86% to 85.7%.
+
+
+
+
 
 
 
