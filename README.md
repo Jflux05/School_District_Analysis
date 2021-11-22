@@ -106,3 +106,7 @@ There is a clear and expected variance betweeen our intial results and the resul
 ![scores_by_school_type_new](https://github.com/Jflux05/School_District_Analysis/blob/540b205e3890d1accc7c515b85ebccc0e4e4c9ee/Resources/scores_by_school_type_new.png)
 
 - Removing the 9th grade scores from Thomas High School did not have a significant impact on results in the distrcit when comparing metrics by school types. 
+
+## Overall Summary
+
+Overall our adjustments showed minor impact to the results across the district. However, had we not adjusted the total student count in the district and at Thomas High School to account for the removal of the 9th grade student scores, there would have been a significant negative impact on the student averages across all categories. Upon making the adjustments, we could easily see that removing the 9th grade student scores from Thomas High School and then adjusting for the changes to the overall student counts had a marginal impact on results for the Thomas High School, which was not enough to make an impact on the results across the district. 
