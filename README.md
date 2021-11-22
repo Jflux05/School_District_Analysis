@@ -1,12 +1,12 @@
 # School_District_Analysis
 
 ## Overview
-Analyzing the city school district data from a variety of sources and in a variety of formats. We have been asked to provide insights about performance trends from standardized tests and patterns occuring within the school district. These insights will be used to inform discussions and strategic decisions at the school and district level. The city school district has tasked us with using these insights to determine if there is a correlation between school performance and its funding, student population, or the school types (charter or district).  
+- Analyzing the city school district data from a variety of sources and in a variety of formats. We have been asked to provide insights about performance trends from standardized tests and patterns occuring within the school district. These insights will be used to inform discussions and strategic decisions at the school and district level. The city school district has tasked us with using these insights to determine if there is a correlation between school performance and its funding, student population, or the school types (charter or district).  
 
-The city school ditrcit board also determined that there is evidence of academic dishonesty, specifcally, the math and reading grades for Thomas High School ninth graders appear to have been altered. As a result, we refractored our script parameters to ensure the analysis results for per student averages wouldn't be skewed and incorrectly influence the school boards strategic decisions.  
+- The city school ditrcit board also determined that there is evidence of academic dishonesty, specifcally, the math and reading grades for Thomas High School ninth graders appear to have been altered. As a result, we refractored our script parameters to ensure the analysis results for per student averages wouldn't be skewed and incorrectly influence the school boards strategic decisions.  
 
 ## Results
-Through our intial analysis, we were able to identify top performing schools, by budget, size, and school type. However, with eveidence of possible academic dishonesty within our data sample (specific to the Thomas High School's 9th grade testing results), required a revision in our analysis to exclude all data related to the suspected group of students (test results for 9th grade students at Thomas High School were replaced with NaN). In the results below we have provided our original results and the revised analysis results to compare againast one another for the School Board to have a holistic picture of the district and the potential impact from academic dishonesty. 
+- Through our intial analysis, we were able to identify top performing schools, by budget, size, and school type. However, with eveidence of possible academic dishonesty within our data sample (specific to the Thomas High School's 9th grade testing results), required a revision in our analysis to exclude all data related to the suspected group of students (test results for 9th grade students at Thomas High School were replaced with NaN). In the results below we have provided our original results and the revised analysis results to compare againast one another for the School Board to have a holistic picture of the district and the potential impact from academic dishonesty. 
 
 ### District Summary
 -ORIGINAL ANALYSIS
@@ -15,7 +15,7 @@ Through our intial analysis, we were able to identify top performing schools, by
 - ANALYSIS WITHOUT 9th GRADE SCORES FROM THOMAS HIGH SCHOOL
 ![district_summary_df_new results_screenshot](https://github.com/Jflux05/School_District_Analysis/blob/8d5519beae5b34a7f18f52f0e7cc0d0b42a16713/Resources/district_summary_df_new.png)
 
-As you can see from the above screenshots, the recalculations had minimal impact on the district summary results. It is evident that while their impact was minimal, the 9th grade scores that were omitted due to potential academic dishonesty, did skew the results to be marginally higher. 
+- As you can see from the above screenshots, the recalculations had minimal impact on the district summary results. It is evident that while their impact was minimal, the 9th grade scores that were omitted due to potential academic dishonesty, did skew the results to be marginally higher. 
 
 - Marinal Result Impacts:
   - The percentage of students passing all subjects fell from 65% to 64.9%
@@ -24,7 +24,7 @@ As you can see from the above screenshots, the recalculations had minimal impact
 
 ### School Summary
 
-In the following screenshots of our analysis, you will see the original results, the analysis and specifically the impact on Thomas High School by replacing the 9th grader's results with "Nan", and the final results once we refactored the script to account for the new total student count. 
+- In the following screenshots of our analysis, you will see the original results, the analysis and specifically the impact on Thomas High School by replacing the 9th grader's results with "Nan", and the final results once we refactored the script to account for the new total student count. 
 
 There is a clear and expected variance betweeen our intial results and the results with the 9th grade scores set to NaN when looking specifically at the percent passing results forThomas High School. While this was expected, when we refactored the code, the variance between our original results and our refactored version show only a slight variance.
 
@@ -53,7 +53,7 @@ There is a clear and expected variance betweeen our intial results and the resul
 - TOP 5 SCHOOLS IN CITY DISTRICT (REFACTORED ANALYSIS)
 ![top_five_schools_new](https://github.com/Jflux05/School_District_Analysis/blob/287d114302ece361431ce162b7ccab4900892c91/Resources/top_5_performing_schools_new.png)
 
-From the above comparison, we can see that there was a slight reduction in the following categories: Average Math Score, Average Reading Score, % Passing Math, % Passing Reading, and % Overall Passing. All of the aforementioned categories had marginal drops (less that 1% across all categories), which was not significant enough to drop Thomas High School's rank below other schools in the district. It still remains the second best school in the district. 
+- From the above comparison, we can see that there was a slight reduction in the following categories: Average Math Score, Average Reading Score, % Passing Math, % Passing Reading, and % Overall Passing. All of the aforementioned categories had marginal drops (less that 1% across all categories), which was not significant enough to drop Thomas High School's rank below other schools in the district. It still remains the second best school in the district. 
 
 
 ### Math and Reading Scores By Grade
@@ -74,7 +74,7 @@ From the above comparison, we can see that there was a slight reduction in the f
 
 ![per_grade_reading_scores_new](https://github.com/Jflux05/School_District_Analysis/blob/3915abf62ba4a23c129b988ec67dc9c8b1b2544a/Resources/per_grade_reading_scores_new.png)
 
-By replacing the 9th grade test results with NaN, there was no visible or significant impact to the results for average grade of math and reading by grade. Removing the data related to the academic dishonesty at Thomas High School only impacted the results for Thomas High School's 9th graders, where our new output includes a NaN instead of a numberical value... No other values were impacted. 
+- By replacing the 9th grade test results with NaN, there was no visible or significant impact to the results for average grade of math and reading by grade. Removing the data related to the academic dishonesty at Thomas High School only impacted the results for Thomas High School's 9th graders, where our new output includes a NaN instead of a numberical value... No other values were impacted. 
 
 ### Scores by School Spending Range Per Student
 
@@ -95,8 +95,14 @@ By replacing the 9th grade test results with NaN, there was no visible or signif
 - Refactored Results:
 -![scores_by_school_size_new](https://github.com/Jflux05/School_District_Analysis/blob/e739b59e739b0d58a824d55c5000624d42358450/Resources/grades_by_school_size_new.png)
 
-Once again, we can see from the above screenshots, that adjusting the data by removing the 9th grade scores from Thomas High School did not have a significant impact on the results.  
+- Once again, we can see from the above screenshots, that adjusting the data by removing the 9th grade scores from Thomas High School did not have a significant impact on the results.  
 
+### Scores by School Type
 
+- Original Results:
+![scores_by_school_type_old](https://github.com/Jflux05/School_District_Analysis/blob/540b205e3890d1accc7c515b85ebccc0e4e4c9ee/Resources/scores_by_school_type_old.png)
 
+- Refactored Results:
+![scores_by_school_type_new](https://github.com/Jflux05/School_District_Analysis/blob/540b205e3890d1accc7c515b85ebccc0e4e4c9ee/Resources/scores_by_school_type_new.png)
 
+- Removing the 9th grade scores from Thomas High School did not have a significant impact on results in the distrcit when comparing metrics by school types. 
