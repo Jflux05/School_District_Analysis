@@ -9,9 +9,10 @@ The city school ditrcit board also determined that there is evidence of academic
 Through our intial analysis, we were able to identify top performing schools, by budget, size, and school type. However, with eveidence of possible academic dishonesty within our data sample (specific to the Thomas High School's 9th grade testing results), required a revision in our analysis to exclude all data related to the suspected group of students (test results for 9th grade students at Thomas High School were replaced with NaN). In the results below we have provided our original results and the revised analysis results to compare againast one another for the School Board to have a holistic picture of the district and the potential impact from academic dishonesty. 
 
 ### District Summary
-
+-ORIGINAL ANALYSIS
 ![district_summary_df_original_results_screenshot](https://github.com/Jflux05/School_District_Analysis/blob/8d5519beae5b34a7f18f52f0e7cc0d0b42a16713/Resources/district_summary_df_original.png)
 
+- ANALYSIS WITHOUT 9th GRADE SCORES FROM THOMAS HIGH SCHOOL
 ![district_summary_df_new results_screenshot](https://github.com/Jflux05/School_District_Analysis/blob/8d5519beae5b34a7f18f52f0e7cc0d0b42a16713/Resources/district_summary_df_new.png)
 
 As you can see from the above screenshots, the recalculations had minimal impact on the district summary results. It is evident that while their impact was minimal, the 9th grade scores that were omitted due to potential academic dishonesty, did skew the results to be marginally higher. 
@@ -27,24 +28,32 @@ In the following screenshots of our analysis, you will see the original results,
 
 There is a clear and expected variance betweeen our intial results and the results with the 9th grade scores set to NaN when looking specifically at the percent passing results forThomas High School. While this was expected, when we refactored the code, the variance between our original results and our refactored version show only a slight variance.
 
-ORIGINAL ANALYSIS RESULTS:
+- ORIGINAL ANALYSIS RESULTS:
 ![per_school_df_summary_old_screenshot](https://github.com/Jflux05/School_District_Analysis/blob/5c488474786e57ad2b640114a7f194d08b79c08d/Resources/per_school_summary_df%20old%20screenshot.png)
 
 
-RESULTS WITH NaN FOR 9th GRADE SCORES:
+- RESULTS WITH NaN FOR 9th GRADE SCORES:
 ![per_school_df_summary_NaN_screenshot](https://github.com/Jflux05/School_District_Analysis/blob/5c488474786e57ad2b640114a7f194d08b79c08d/Resources/per_school_summary_df_NAN_old_screenshot.png)
 
-REFACTORED RESULTS (ACCOUNTS FOR ADJUSTED TOTAL STUDENT COUNT):
+- REFACTORED RESULTS (ACCOUNTS FOR ADJUSTED TOTAL STUDENT COUNT):
 ![per_school_df_summary_new_screenshot](https://github.com/Jflux05/School_District_Analysis/blob/5c488474786e57ad2b640114a7f194d08b79c08d/Resources/per_school_summary_df_new_screenshot.png)
 
-COMPARING ORIGINAL RESULTS WITH REFACTORED RESULTS:
-- The overall percentage of students passing both math and reading at Thomas High School decreased slightly from 90.95% to 90.63%.
-- The percentage of students passing math also had a marginal reduction, falling from from 93.27% to 93.18%.
-- The percentage of students passing reading also had a marginal reduction, falling from from 97.31% to 97.01%.
-- The average math score at Thomas High School was not greatly impacted and saw a minor drop in scores from 83.41 to 83.35. 
-- The average reading score at Thomas High School actually improved but not by much, from 83.84 to 83.89. 
+- COMPARING ORIGINAL RESULTS WITH REFACTORED RESULTS:
+  - The overall percentage of students passing both math and reading at Thomas High School decreased slightly from 90.95% to 90.63%.
+  - The percentage of students passing math also had a marginal reduction, falling from from 93.27% to 93.18%.
+  - The percentage of students passing reading also had a marginal reduction, falling from from 97.31% to 97.01%.
+  - The average math score at Thomas High School was not greatly impacted and saw a minor drop in scores from 83.41 to 83.35. 
+  - The average reading score at Thomas High School actually improved but not by much, from 83.84 to 83.89. 
 
+### Results of Replacing 9th Grade Math and Reading Scores Relative to the Other Scools:
 
+- TOP 5 SCHOOLS IN CITY DISTRICT (ORIGINAL ANALYSIS)
+![top_five_schools_old](https://github.com/Jflux05/School_District_Analysis/blob/287d114302ece361431ce162b7ccab4900892c91/Resources/top_5_performing_schools_old.png)
+
+- TOP 5 SCHOOLS IN CITY DISTRICT (REFACTORED ANALYSIS)
+![top_five_schools_new](https://github.com/Jflux05/School_District_Analysis/blob/287d114302ece361431ce162b7ccab4900892c91/Resources/top_5_performing_schools_new.png)
+
+From the above comparison, we can see that there was a slight reduction in the following categories: Average Math Score, Average Reading Score, % Passing Math, % Passing Reading, and % Overall Passing. All of the aforementioned categories had marginal drops (less that 1% across all categories), which was not significant enough to drop Thomas High School's rank below other schools in the district. It still remains the second best school in the district. 
 
 
 
