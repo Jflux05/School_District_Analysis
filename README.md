@@ -56,6 +56,25 @@ There is a clear and expected variance betweeen our intial results and the resul
 From the above comparison, we can see that there was a slight reduction in the following categories: Average Math Score, Average Reading Score, % Passing Math, % Passing Reading, and % Overall Passing. All of the aforementioned categories had marginal drops (less that 1% across all categories), which was not significant enough to drop Thomas High School's rank below other schools in the district. It still remains the second best school in the district. 
 
 
+### Math and Reading Scores By Grade
+- MATH SCORES BY GRADE (ORIGINAL OUTPUT)
+
+![per_grade_math_scores_old](https://github.com/Jflux05/School_District_Analysis/blob/3915abf62ba4a23c129b988ec67dc9c8b1b2544a/Resources/per_grade_math_scores_old.png)
+
+- MATH SCORES BY GRADE (REFACTORED OUTPUT)
+
+![per_grade_math_scores_new](https://github.com/Jflux05/School_District_Analysis/blob/3915abf62ba4a23c129b988ec67dc9c8b1b2544a/Resources/per_grade_math_scores_new.png)
+
+- READING SCORES BY GRADE (ORIGINAL OUTPUT)
+
+![per_grade_reading_scores_old](https://github.com/Jflux05/School_District_Analysis/blob/3915abf62ba4a23c129b988ec67dc9c8b1b2544a/Resources/per_grade_reading_scores_old.png)
+
+
+- READING SCORES BY GRADE (REFACTORED OUTPUT)
+
+![per_grade_reading_scores_new](https://github.com/Jflux05/School_District_Analysis/blob/3915abf62ba4a23c129b988ec67dc9c8b1b2544a/Resources/per_grade_reading_scores_new.png)
+
+As we can see by comparing the original and new ouputs for the average subject scores by grade, removing the 9th grade THS scores had absolutely no numeric impact on the DataFrames other than to replace the scores with "nan".
 
 
 
