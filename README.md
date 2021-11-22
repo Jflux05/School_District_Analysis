@@ -74,8 +74,28 @@ From the above comparison, we can see that there was a slight reduction in the f
 
 ![per_grade_reading_scores_new](https://github.com/Jflux05/School_District_Analysis/blob/3915abf62ba4a23c129b988ec67dc9c8b1b2544a/Resources/per_grade_reading_scores_new.png)
 
-As we can see by comparing the original and new ouputs for the average subject scores by grade, removing the 9th grade THS scores had absolutely no numeric impact on the DataFrames other than to replace the scores with "nan".
+By replacing the 9th grade test results with NaN, there was no visible or significant impact to the results for average grade of math and reading by grade. Removing the data related to the academic dishonesty at Thomas High School only impacted the results for Thomas High School's 9th graders, where our new output includes a NaN instead of a numberical value... No other values were impacted. 
 
+### Scores by School Spending Range Per Student
+
+- You can see from the analysis screenshots below, that removing the 9th grade scores at Thomas High School did not have an impact on the per student spending results. 
+
+- Original Results:
+![school_scores_spending_old](https://github.com/Jflux05/School_District_Analysis/blob/e739b59e739b0d58a824d55c5000624d42358450/Resources/school_scores_by_spending_old.png)
+
+- Refactored Results:
+![school_scores_spending_new](https://github.com/Jflux05/School_District_Analysis/blob/e739b59e739b0d58a824d55c5000624d42358450/Resources/school_scores_by_spending_new.png)
+
+
+### Scores by School Size
+
+- Original Results:
+![scores_by_school_size_old](https://github.com/Jflux05/School_District_Analysis/blob/e739b59e739b0d58a824d55c5000624d42358450/Resources/grades_by_school_size_old.png)
+
+- Refactored Results:
+-![scores_by_school_size_new](https://github.com/Jflux05/School_District_Analysis/blob/e739b59e739b0d58a824d55c5000624d42358450/Resources/grades_by_school_size_new.png)
+
+Once again, we can see from the above screenshots, that adjusting the data by removing the 9th grade scores from Thomas High School did not have a significant impact on the results.  
 
 
 
